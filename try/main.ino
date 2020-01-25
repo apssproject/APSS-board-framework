@@ -1,6 +1,8 @@
 #include "LiquidCrystal.h"
 #include "SimpleDHT.h"
 
+#include "sensors.h"
+
 int analog_port = 0;
 int pinDHT11 = 22;
 
@@ -10,6 +12,9 @@ SimpleDHT11 dht11;
 LiquidCrystal lcd(8,9,4,5,6,7);
 
 void setup() {
+
+  sensors s = new sensors();
+  sensors.sensor[]
   Serial.begin(9600);
   Serial1.begin(9600);
   lcd.begin(16,2);

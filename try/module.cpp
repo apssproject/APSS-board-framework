@@ -7,13 +7,11 @@
  * Author: Paride Giunta <paridegiunta@gmail.com>
  */
 
-using namespace std;
+module::module( char name[10], int[] pins ) {
+  this.name = name;
+  this.pin_list = pins;
+}
 
- class sensors
- {
-   public:
-     sensors( int pin );
-     void start_measuring();
-     void start_measuring( sensors [] );
-     std::vector < sensor > sensor;
- };
+void module::start_measuring() {
+  return;
+}
